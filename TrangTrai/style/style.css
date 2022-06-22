@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(https://vatlieutrangtri.net/image/catalog/Cong%20trinh%20hoan%20thien/giấy%20dán%20tường%20đẹp%202019/1-giay-dan-tuong-dep-2019.png);
+}
+
+.wrapper { 
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.main_screen {
+    border: 2px solid black;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 80%;
+    min-height: 90vh;
+    margin: auto;
+    background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.main_screen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #333333;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    padding: 10px;
+    display: inline-flex;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+}
+
+.navigation ul li a {
+    position: relative;
+}
+
+.navigation ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navigation ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.sign-in button {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #03a9f4;
+    border: 1px solid rgb(106, 106, 185);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sign-in button:hover {
+    transition: all 0.5s;
+    background-color: #03a9f4;
+    color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* =========================================================== */
+.content {
+    text-align: center;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding: 10%;
+}
+
+.content h2 {
+    padding: 5px;
+    font-size: 70px;
+    border: 1px solid black;
+    color: #333333;
+}
+
+.hr-content {
+    margin: 10px 0px;
+    padding: 0.5px;
+    border: none;
+    width: 100%;
+    background: black;
+}
+
+.button-read-more {
+    
+    text-align: center;
+ 
+}
+
+.button-read-more button {
+    font-family: 'Roboto', sans-serif;
+    background: #03a9f4;
+    color: white;
+    border: 1px solid rgb(106, 106, 185);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button-read-more button:hover {
+    transition: all 0.5s;
+    background: white;
+    color: black;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================================== */
+#side-bar-button{
+    display: none;
+}
+.wrapper-side-bar ul {
+    list-style: none;
+}
+
+.wrapper-side-bar ul li {
+    background: #33383e;
+    padding: 20px;
+    display: block;
+}
+
+.wrapper-side-bar ul li:hover {
+    background: #202222;
+}
+
+.wrapper-side-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-bar {
+    position: absolute;
+    opacity: 0;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: -400px;
+    overflow: hidden;
+    position: fixed;
+    background: #33383e;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+
+.enter {
+    opacity: 1;
+    left: 0;
+}
+
+.close-menu {
+    color: white;
+    margin: 3%;
+    text-align: right;
+}
+.close{
+    cursor: pointer;
+}
+#side-bar-button i{
+    font-size: 20px;
+}
+.hr-rotate{
+    background-color: #333333;
+    padding: 1px;
+    border: none;
+    width: 10%;
+    position: relative;
+    top: 20px;
+    right: 4%;
+    transform: rotate(-55deg);
+}
+.hr-rotate-2{
+    background-color: #333333;
+    padding: 1px;
+    border: none;
+    width: 10%;
+    position: relative;
+    top: 25px;
+    right: 3%;
+    transform: rotate(-55deg);
+}
+.hr-rotate-3{
+    background-color: #333333;
+    padding: 1px;
+    border: none;
+    width: 10%;
+    position: relative;
+    top: 30px;
+    right: 2%;
+    transform: rotate(-55deg);
+}
+@media screen and (max-width:1000px) {
+    .navigation{
+        justify-content: center;
+    }
+    .sign-in{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+    }
+    #side-bar-button{
+        display: block;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .text-content{
+        font-size: 30px !important;
+    }
+}
