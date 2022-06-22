@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.side-bar {
+    padding: 20px;
+    background-color: #bbdbc7;
+    flex: 10%;
+    min-height: 100vh;
+}
+
+.main {
+    padding: 20px;
+    flex: 90%;
+}
+
+.container {
+    padding: 20px !important;
+}
+
+.pd {
+    padding: 10px 0px;
+}
+
+fieldset {
+    padding: 10px;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+fieldset legend {
+    color: dark;
+}
+
+.application {
+    display: flex;
+}
+
+.main_content {
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.left-path-1 {
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.left-path-1:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.4s;
+}
+
+.left-path-2 {
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.left-path-2:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.4s;
+}
+
+
+.right-path {
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    background: #73dd9b;
+    cursor: pointer;
+    margin: 15px 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.menu ul li:hover {
+    background-color: white;
+    transition: all 0.4s;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.menu ul li a {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* ============================================= */
+.logo {
+    text-align: center;
+}
+
+.dot {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    font-weight: bolder;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.dashboard {
+    /* display: none; */
+}
+
+.dashboard-2 {
+    display: none;
+}
+
+.dashboard-3 {
+    display: none;
+}
+
+/* ========================================================== */
+.modal-asdasds {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    border-radius: 15px;
+    background: #73dd9b;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-link {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+}
+
+.feature {
+    font-family: 'Fascinate', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feature:hover {
+    background-color: #73dd9b;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width:1000px) {
+    .video-to-hide{
+        display: none;
+    }
+    .application {
+        flex-direction: column;
+    }
+
+    .side-bar {
+        display: none;
+    }
+}

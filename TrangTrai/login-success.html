@@ -1,14 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" type="x-icon"
+        href="https://img.favpng.com/11/2/1/computer-icons-clip-art-scalable-vector-graphics-portable-network-graphics-png-favpng-pzuxPhBj8Z8WM4MmB8DETepJp_t.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style-login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SUBACITO - WELCOME</title>
 </head>
+
 <body>
     <div class="wrapper">
-        
+        <div class="side-bar">
+            <div class="logo"><span class="dot">A</span></div>
+            <div class="menu">
+                <ul>
+                    <li id="dashboard"><a href="#">TRANG TRẠI NAY CÓ GÌ?</a></li>
+                    <li id="quan-ly-tai-khoan"><a href="#">QUẢN LÝ TÀI KHOẢN</a></li>
+                    <li id="quan-ly-trang-trai"><a href="#">QUẢN LÝ TRANG TRẠI</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <fieldset class="dashboard">
+                <legend>Hi Admin!</legend>
+                <div class="main_content container" style="background: white;  font-family: 'Fascinate', cursive;
+                font-family: 'Roboto', sans-serif;">
+                    <h2>MY FARM</h2>
+                    <p style="font-size: 17px; font-family: 'Fascinate', cursive;
+                    font-family: 'Roboto', sans-serif;">Mỗi ngày, chúng tôi đến thăm hàng ngàn trang trại trên khắp thế
+                        giới. Các chuyên gia của De Heus đã và đang làm việc chặt chẽ với những người chăn nuôi, cung
+                        cấp những kiến thức và kinh nghiệm thực tiễn về mối quan hệ tương quan giữa thức ăn chăn nuôi và
+                        cách thức chăn nuôi, tư vấn về các chiến lược dinh dưỡng đáp ứng nhu cầu vật nuôi và hỗ trợ quản
+                        lý trang trại. Chúng tôi tập trung hướng vào một mục tiêu: bảo đảm sức khoẻ vật nuôi và tối ưu
+                        hóa hiệu quả kinh tế cho trang trại.</p>
+                </div>
+                <div class="application">
+                    <div class="left-path">
+                        <div class="left-path-1 pd container" style="background: white;">
+                            <div>
+                                <img src="https://dug.com/wp-content/uploads/2021/08/Webp.net-resizeimage-5.jpg" alt=""
+                                    width="100%">
+                            </div>
+                            <h2 style="text-align: center;">Chăn nuôi bò</h2>
+                            <p style=" font-family: 'Fascinate', cursive;
+                           font-family: 'Roboto', sans-serif;">Chăn nuôi bò thịt theo mô hình nuôi nhốt, trồng cỏ thâm
+                                canh thu cắt cấp tại chuồng, sẽ tăng thêm chi phí cắt cỏ và vận chuyển cỏ, do vậy mà
+                                tăng chi phí sản xuất và giảm lợi nhuận. Nuôi bò thịt theo phương thức chăn thả trên
+                                đồng cỏ là chính kết hợp với bổ sung thêm thức ăn tại chuồng là hợp lí hơn cả.</p>
+                        </div>
+                        <div class="left-path-2 pd container" style="background: white;">
+                            <div>
+                                <img src="https://www.moneysavingexpert.com/content/dam/chicken.jpg" alt=""
+                                    width="100%">
+                            </div>
+                            <h2 style="text-align: center;">Chăn nuôi gà</h2>
+                            <p style=" font-family: 'Fascinate', cursive;
+                            font-family: 'Roboto', sans-serif;">Trở thành triệu phú chăn nuôi gà , bà con chăn nuôi có
+                                hứng thú không? Thật vậy, chỉ sau thời gian ngắn áp dụng kỹ thuật chăn nuôi gà đúng
+                                chuẩn, bà con đã có thể nâng cao số lượng gà trong đàn của gia đình từ trăm con lên
+                                khoảng vài nghìn con và đạt mức doanh thu hàng năm khoảng vài trăm triệu đồng. Theo rất
+                                nhiều chuyên gia trong lĩnh vực chăn nuôi đã nhận định, thực ra kỹ thuật chăn nuôi gà
+                                thả vườn không hề khó khăn.</p>
+                        </div>
+                    </div>
+                    <div class="right-path pd container" style="background: white; font-family: 'Fascinate', cursive;
+                    font-family: 'Roboto', sans-serif;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam nostrum pariatur
+                            cupiditate explicabo maxime, vitae deserunt cum tempore at. Neque labore nam voluptatem
+                            exercitationem temporibus porro quo ipsam est!</p>
+
+                        <div class="feature"
+                            style="display: flex; align-items: center; padding: 20px; border: 1px solid black; margin: 10px 0px;">
+                            <img src="https://png.pngtree.com/element_our/png_detail/20181226/temperature-vector-icon-png_276758.jpg"
+                                alt="" width="40px"><span style="margin: 0px 20px;">Nhiệt độ: 26°C</span>
+                        </div>
+                        <div class="feature"
+                            style="display: flex; align-items: center; padding: 20px; border: 1px solid black; margin: 10px 0px;">
+                            <img src="https://toannhan.com/pub/media/wysiwyg/do-am-thap.png" alt="" width="40px"><span
+                                style="margin: 0px 20px;">Độ ẩm: 88%</span>
+                        </div>
+                        <div class="feature"
+                            style="display: flex; align-items: center; padding: 20px; border: 1px solid black; margin: 10px 0px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png" alt="" width="40px"><span
+                                style="margin: 0px 20px;">Thời tiết: Nắng</span>
+                        </div>
+                        <div class="feature"
+                            style="display: flex; align-items: center; padding: 20px; border: 1px solid black; margin: 10px 0px;">
+                            <img src="https://st2.depositphotos.com/4410397/7935/v/950/depositphotos_79358180-stock-illustration-farmer-icon.jpg"
+                                alt="" width="40px"><span style="margin: 0px 20px;">Nông dân: 20 người</span>
+                        </div>
+                        <div class="video-to-hide">
+                            <iframe width="400" height="300" src="https://www.youtube.com/embed/KjmuBo8xoCU"
+                                title="COW VIDEO 🐮🐄 COWS MOOING AND GRAZING IN A FIELD 🐄🐮" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+            <!-- Quản lý tài khoản -->
+            <fieldset class="dashboard-2">
+                <legend>Hi Admin!</legend>
+                <h2 style="text-align: center;">QUẢN LÝ TÀI KHOẢN</h2>
+                <button id="addModal">+</button>
+                <div>
+                    <div class="test-table" id="test-table">
+                        <table class="table" id="tblAct">
+                            <thead>
+                                <tr style="border: 1px solid gray">
+                                    <!-- <th scope="col" style="border: 1px solid gray"><span>#</span></th> -->
+                                    <th scope="col" style="border: 1px solid gray"><span></span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Username</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Password</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Role</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Img</span></th>
+                                    <th scope="col" style="border: 1px solid gray" id="action-for-ad">
+                                        <span>ACTION</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblAct">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <div id="myModal" class="modal-asdasds">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form id="form-to-add">
+                            <div class="form-group">
+                                <span id="txtId"></span>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="username" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="role" placeholder="Role">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="img" placeholder="Image">
+                            </div>
+
+                            <div class="form-group d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary" id="btnModalAdd">ADD</button>
+                                <button type="button" class="btn btn-secondary" id="btnModalCancel">CANCEL</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Form to add -->
+                <div class="modal">
+                    <!-- ================================================================================================= -->
+                    <!-- Modal to edit -->
+                    <div id="ModalEdit">
+                        <form id="form-to-edit">
+                            <div class="form-group">
+                                <span id="txtId"></span>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="usernameUpdate"
+                                    placeholder="Username: ">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="passwordUpdate"
+                                    placeholder="Password: ">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="roleUpdate" placeholder="Role: ">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="" id="imgUpdate" placeholder="Image: ">
+                            </div>
+
+                            <div class="form-group d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary" id="btnModalUpdate">UPDATE</button>
+                                <button type="button" class="btn btn-secondary" id="btnModalCancelEdit">CANCEL</button>
+                            </div>
+                        </form>
+                        <!-- ================================================================================================= -->
+
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="dashboard-3">
+                <legend>Hi Admin!</legend>
+                <h2 style="text-align: center;">QUẢN LÝ TRANG TRẠI</h2>
+
+            </fieldset>
+        </div>
     </div>
+    </div>
+    <footer>
+        <div style="display: flex; justify-content: space-around; align-items: center; padding: 0px 10px;">
+            <div><span>© Copyright Subacito</span></div>
+            <div class="footer-link">
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">ĐIỀU KHOẢN</a></li>
+                <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("addModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        $("#addModal").click(function () {
+            $("#form-to-add").show();
+        })
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        $("#btnModalCancel").click(function () {
+            modal.style.display = "none";
+        })
+        $("#btnModalAdd").click(function () {
+            modal.style.display = "none";
+        })
+    </script>
+
+    <script>
+        $("#dashboard").click(function () {
+            $(".dashboard").show(1000);
+            $(".dashboard-2").hide();
+            $(".dashboard-3").hide();
+
+        })
+        $("#quan-ly-tai-khoan").click(function () {
+            $(".dashboard-2").show(1000);
+            $(".dashboard").hide();
+            $(".dashboard-3").hide();
+        })
+        $("#quan-ly-trang-trai").click(function () {
+            $(".dashboard-3").show(1000);
+            $(".dashboard").hide();
+            $(".dashboard-2").hide();
+        })
+    </script>
+    <script src="js/api.js"></script>
 </body>
+
 </html>
