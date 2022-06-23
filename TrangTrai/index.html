@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="shortcut icon" type="x-icon"
         href="https://img.favpng.com/11/2/1/computer-icons-clip-art-scalable-vector-graphics-portable-network-graphics-png-favpng-pzuxPhBj8Z8WM4MmB8DETepJp_t.jpg">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>TRANG CHỦ - SUBACITO</title>
 </head>
 
@@ -28,7 +32,7 @@
                             <li><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="side-bar-button"><i class="fa-solid fa-bars"></i></div>
@@ -45,7 +49,41 @@
                     </ul>
                 </div>
                 <div class="sign-in">
-                    <button>Đăng nhập</button>
+                    <button onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
+                    <div class="w3-container">
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                                <div class="w3-center"><br>
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                        class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                        title="Close Modal">&times;</span>
+                                </div>
+
+                                <form class="w3-container">
+                                    <div class="w3-section">
+                                        <label><b>Username</b></label>
+                                        <input id="username_fill_in" class="w3-input w3-border w3-margin-bottom"
+                                            type="text" placeholder="Enter Username" name="usrname" required>
+                                        <label><b>Password</b></label>
+                                        <input id="password_fill_in" class="w3-input w3-border" type="password"
+                                            placeholder="Enter Password" name="psw" required>
+                                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="button">Login</button>
+                                        <input class="w3-check w3-margin-top" type="checkbox" checked="checked">
+                                        Remember me
+                                    </div>
+                                </form>
+
+                                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                    <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                                        class="w3-button w3-red">Cancel</button>
+                                    <span class="w3-right w3-padding w3-hide-small">Forgot <a
+                                            href="#">password?</a></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="content">
@@ -58,16 +96,20 @@
                 <div>
                     <hr class="hr-rotate-3">
                 </div>
-                <div style="width: 40%; margin: 0 auto"><hr class="hr-content"></div>
+                <div style="width: 40%; margin: 0 auto">
+                    <hr class="hr-content">
+                </div>
                 <h2 class="text-content">QUẢN LÝ TRANG TRẠI</h2>
-                <div style="width: 40%; margin: 0 auto"><hr class="hr-content"></div>
+                <div style="width: 40%; margin: 0 auto">
+                    <hr class="hr-content">
+                </div>
             </div>
             <div class="button-read-more">
                 <button>READ MORE</button>
             </div>
-            
+
             <div class="icon-social">
-               
+
             </div>
         </div>
     </div>
@@ -83,6 +125,7 @@
             $("#side-bar-button").css("opacity", "1");
         }) 
     </script>
+
 </body>
 
 </html>

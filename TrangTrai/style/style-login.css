@@ -35,7 +35,7 @@
 fieldset {
     padding: 10px;
     min-height: 100vh;
-    border: 1px solid black;
+    border: 1px solid black !important;
 }
 
 fieldset legend {

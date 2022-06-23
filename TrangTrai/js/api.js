@@ -22,8 +22,8 @@ function loadData() {
                         "<td>" + data[i].role + "</td>" +
                         "<td>" + data[i].img + "</td>" +
                         "<td>" +
-                        '<img id="editIMG" class="actionIcon" src="download.png" onclick="editE(' + data[i].id + ')" alt="Edit" srcset=" ">' + 
-                        '<img class="actionIcon" src="2496733.png" onclick="deleteE(' + data[i].id + ')" alt="Delete" srcset=" ">' +
+                        '<img id="editIMG" class="actionIcon" src="img/download.png" onclick="editE(' + data[i].id + ')" alt="Edit" srcset=" ">' + 
+                        '<img class="actionIcon" src="img/2496733.png" onclick="deleteE(' + data[i].id + ')" alt="Delete" srcset=" ">' +
                         "</td>" +
                         "</tr>";
                 }
