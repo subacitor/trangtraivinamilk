@@ -171,7 +171,7 @@
 
                 <!-- Form to add -->
                 <div class="modal">
-                    
+
                     <!-- ================================================================================================= -->
                     <!-- Modal to edit -->
                     <div id="ModalEdit">
@@ -207,7 +207,65 @@
             <fieldset class="dashboard-3">
                 <legend>Hi Admin!</legend>
                 <h2 style="text-align: center;">QUẢN LÝ TRANG TRẠI</h2>
+                <button id="addModalQLTT">+</button>
+                <div>
+                    <div class="test-table-QLTT" id="test-table-QLTT">
+                        <table class="table" id="tblActQLTT">
+                            <thead>
+                                <tr style="border: 1px solid gray">
+                                    <!-- <th scope="col" style="border: 1px solid gray"><span>#</span></th> -->
+                                    <th scope="col" style="border: 1px solid gray"><span></span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Tên mùa vụ</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Sản lượng ước tính</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Đơn vị tính</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Ngày bắt đầu</span></th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Ngày thu hoạch (dự kiến)</span>
+                                    </th>
+                                    <th scope="col" style="border: 1px solid gray"><span>Trạng trái</span></th>
+                                    <th scope="col" style="border: 1px solid gray" id="action-for-ad">
+                                        <span>ACTION</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblActQLTT">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
+                <div id="myModalQLTT">
+                    <form id="form_myModalQLTT">
+                        <span class="close close_form-myModalQLT">&times;</span>
+                        <span id="txtId"></span>
+                        <input type="text" id="tenMuavu" placeholder="Tên mùa vụ: ">
+                        <input type="text" id="SLUT" placeholder="Số lượng ước tính: ">
+                        <input type="text" id="DVT" placeholder="Đơn vị tính: ">
+                        <input type="text" id="ngayBatdau" placeholder="Ngày bắt đầu: ">
+                        <input type="text" id="ngayThuhoach" placeholder="Ngày thu hoạch: ">
+                        <input type="text" id="trangThai" placeholder="Trạng thái: ">
+                        <div>
+                            <button type="button" id="btnModalAddQLTT">ADD</button>
+                            <button type="button" id="btnModalCancelQLTT">CANCEL</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="myModalQLTTedit">
+                    <form id="form_myModalQLTTEdit">
+                        <span class="close close_form-myModalQLTedit">&times;</span>
+                        <span id="txtId"></span>
+                        <input type="text" id="tenMuavuEdit" placeholder="Tên mùa vụ: ">
+                        <input type="text" id="SLUTEdit" placeholder="Số lượng ước tính: " readonly>
+                        <input type="text" id="DVTEdit" placeholder="Đơn vị tính: " readonly>
+                        <input type="text" id="ngayBatdauEdit" placeholder="Ngày bắt đầu: ">
+                        <input type="text" id="ngayThuhoachEdit" placeholder="Ngày thu hoạch: ">
+                        <input type="text" id="trangThaiEdit" placeholder="Trạng thái: ">
+                        <div>
+                            <button type="button" id="btnModalUpdateQLTTEdit">UPDATE</button>
+                            <button type="button" id="btnModalCancelQLTTEdit">CANCEL</button>
+                        </div>
+                    </form>
+                </div>
             </fieldset>
         </div>
     </div>
@@ -221,23 +279,31 @@
                 <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
             </div>
         </div>
-
     </footer>
+    <button type="button" class="scroll-to-top btn-position btnstyle"><i class="fa-solid fa-angle-up"></i></button>
 
     <script>
-        // Get the modal
+
+        const nav = document.querySelector("nav");
+        const btnstyle = document.querySelector(".btnstyle");
+        btnstyle.addEventListener("click", function () {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        });
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 90) {
+                btnstyle.classList.add("active");
+            } else {
+                btnstyle.classList.remove("active");
+            }
+        });
+
         var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
         var btn = document.getElementById("addModal");
-
-        // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
         btn.onclick = function () {
             modal.style.display = "block";
         }
+        
         $("#addModal").click(function () {
             $("#form-to-add").show();
         })
@@ -280,6 +346,31 @@
             $(".dashboard-2").hide();
         })
     </script>
+
+    <script>
+        $("#addModalQLTT").click(function () {
+            $("#form_myModalQLTT").css("display", "block")
+        })
+
+        $(".close_form-myModalQLT").click(function () {
+            $("#form_myModalQLTT").css("display", "none")
+        })
+
+        $("#btnModalCancelQLTT").click(function () {
+            $("#form_myModalQLTT").css("display", "none")
+        })
+
+        $("#btnModalCancelQLTTEdit").click(function () {
+            $("#form_myModalQLTTEdit").css("display", "none")
+        })
+
+        $(".close_form-myModalQLTedit").click(function () {
+            $("#form_myModalQLTTEdit").css("display", "none")
+        })
+
+
+    </script>
+    <script src="js/QLTT.js"></script>
     <script src="js/api.js"></script>
 </body>
 

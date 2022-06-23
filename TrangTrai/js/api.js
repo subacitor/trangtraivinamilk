@@ -1,6 +1,12 @@
 
 $(document).ready(function () {
     loadData();
+    loadDataQLTT();
+    date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    document.getElementById("ngayBatdau").value = day + "/" + month + "/" + year;
 });
 
 var arrEle;
@@ -34,55 +40,6 @@ function loadData() {
     );
 }
 
-// ==========================================================================================================================================
-
-// var arrEle2;
-// function loadData2() {
-//     $("#tblAct2 tbody").empty();
-//     var strResult2 = "";
-//     var strResult3 = "";
-//     var strResult4 = "";
-//     var strResult5 = "";
-//     var strResult6 = "";
-//     var strResult7 = "";
-//     var strResultCN = "";
-//     $.ajax(
-//         {
-//             url: "https://62874cbde9494df61b35fb64.mockapi.io/dataUserTest",
-//             type: "GET",
-//             dataType: "json",
-//             success: function (data) {
-//                 arrEle2 = data;
-//                 for (var i = 0; i < data.length; i++) {
-//                     strResult2 = strResult2 +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T2 + "</td>"
-//                     strResult3 = strResult3 +
-//                         "<td>" +"<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T3 + "</td>"
-//                     strResult4 = strResult4 +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T4 + "</td>"
-//                     strResult5 = strResult5 +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T5 + "</td>"
-//                     strResult6 = strResult6 +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T6 + "</td>"
-//                     strResult7 = strResult7 +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].T7 + "</td>"
-//                     strResultCN = strResultCN +
-//                         "<td>" + "<span class='data-time'>" + data[i].time + "</span>" + "<br>" + data[i].CN + "</td>"
-//                 };
-
-//                 console.log(strResult2);
-//                 $(".thu-2").append(strResult2);
-//                 $(".thu-3").append(strResult3);
-//                 $(".thu-4").append(strResult4);
-//                 $(".thu-5").append(strResult5);
-//                 $(".thu-6").append(strResult6);
-//                 $(".thu-7").append(strResult7);
-//                 $(".cn").append(strResultCN);
-//             }
-//         }
-//     );
-// }
-// ========================================================================================================
 $("#btnModalAdd").click(function () {
     var data = {};
     data.username = $("#username").val();

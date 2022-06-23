@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto&display=swap');
@@ -137,7 +138,7 @@ fieldset legend {
 }
 
 /* ========================================================== */
-.modal-asdasds {
+.modal-asdasds{
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -247,7 +248,56 @@ footer {
     background-color: #73dd9b;
     transition: all 0.4s;
 }
+#form_myModalQLTT{
+    display: none;
+    border-radius:15px ;
+    margin: 10px;
+    padding: 15px;
+    background: rgb(101, 212, 101);
+}
+#form_myModalQLTTEdit{
+    display: none;
+    border-radius:15px ;
+    margin: 10px;
+    padding: 15px;
+    background: rgb(101, 212, 101);
+}
+/* ========================================================================== */
 
+.scroll-to-top {
+    position: relative;
+}
+.btn-position {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 20;
+
+}
+.btnstyle {
+    background-color: rgb(95, 174, 179);
+    border: none;
+    border-radius: 7px;
+    font-weight: lighter;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    cursor: pointer;
+    /* transition: all 0.5s ease-in-out; */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 99;
+}
+.btnstyle {
+    transition-timing-function: ease;
+}
+
+.btnstyle.active {
+    opacity: 1;
+}
 @media screen and (max-width:1000px) {
     .video-to-hide{
         display: none;
